@@ -97,10 +97,13 @@ document.querySelector(".guess-input").addEventListener("keydown", (e) => {
 myObj = { a: 1, b: 2, c: 3 };
 localStorage.setItem("OBJ", JSON.stringify(myObj));
 const readObj = localStorage.getItem("OBJ");
+//? 👆json veya arrayı string haline geitiriyoruz bu sekilde
+console.log(readObj)
 const readOBJ = JSON.parse(localStorage.getItem("OBJ"));
+//? 👆okurkende string haline getirdiğimiz arrayı veya objeyı tekrar eski haline getiriyoruz
 console.log(typeof readObj);
 console.log(typeof readOBJ);
-console.log(readOBJ);
+// console.log(readOBJ);
 
 // //* PUSEDUO
 // //? eger score > topScore
