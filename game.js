@@ -61,7 +61,7 @@ document.querySelector(".check-btn").addEventListener("click", () => {
                 ? (msg.innerHTML = `<i class="fa-solid fa-arrow-trend-down fa-2x"></i >DECREASE `)
                 : (msg.innerHTML = `<i i class="fa-solid fa-arrow-trend-up fa-2x"></i> INCREASE `);
         } else {
-            msg.innerHTML = `You Lost < i class="fa-regular fa-face-sad-tear fa-2x" /> </i>`;
+            msg.innerHTML = `You Lost <i class="fa-regular fa-face-sad-tear fa-2x"></i>`;
             document.querySelector(".secret-number").textContent = randomNumber;
             body.className = "bg-black";
             document.querySelector(".check-btn").disabled = true;
