@@ -79,15 +79,18 @@ document.querySelector(".again-btn").addEventListener("click", () => {
     document.querySelector(".secret-number").textContent = "?";
     console.log(randomNumber);
     document.querySelector(".check-btn").disabled = false;
-    document.querySelector("body").classList.remove("bg-success", "bg-danger");
+    // 👆global yapmadıgımız
+    //  için tek tek bu sekilde yazıyoruz.Yani burada check butonunu yenılen dedik 
+    document.querySelector("body").classList.remove("bg-success", "bg-black");
     document.querySelector(".guess-input").value = "";
-    document.querySelector(".msg").innerText = `Starting..`;
+    document.querySelector(".msg").innerText = `Starting...`;
 });
 
 document.querySelector(".guess-input").addEventListener("keydown", (e) => {
     if (e.code === "Enter") {
         document.querySelector(".check-btn").click();
     }
+
 });
 
 //! LOCALSTORAGE- SESSIONSTORAGE
