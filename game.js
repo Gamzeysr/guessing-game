@@ -6,7 +6,7 @@
 
 // //? 1-100 arasinda rasgele bir sayi tut.
 let randomNumber = Math.round(Math.random() * 100);
-console.log(randomNumber);
+// console.log(randomNumber);
 
 // //? Variables
 let score = 10;
